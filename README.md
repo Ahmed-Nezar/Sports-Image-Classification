@@ -1,1 +1,1 @@
-## CNN_mobile-laptop-sales-classification
+## Mobile-Laptop-Sales-Classification
