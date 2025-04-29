@@ -1,2 +1,5 @@
 *.csv
-/dataset/
+data/dataset/
+*.jpeg
+*.jpg
+*.png
