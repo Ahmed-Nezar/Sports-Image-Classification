@@ -4,3 +4,4 @@ data/dataset/
 *.jpg
 *.png
 logs/
+*.pt
