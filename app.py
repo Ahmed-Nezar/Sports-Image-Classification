@@ -57,6 +57,8 @@ if view_choice == "Classification Dashboard":
             "224_scratch_random_cropping",
             "224_pretrained_random_cropping",
             "224_pretrained_center_cropping",
+            "224_pretrained_random_decay",
+            "224_pretrained_center_decay",
         ],
     )
     input_dim = 128 if "128" in input_size_choice else 224

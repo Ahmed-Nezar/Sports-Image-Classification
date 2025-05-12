@@ -12,6 +12,8 @@ MODEL_ROOTS = {
     "224_scratch_random_cropping": "./logs_random_cropping/logs_224_scratch",
     "224_pretrained_center_cropping": "./logs_center_cropping/logs_224_pretrained",
     "128_pretrained_center_cropping": "./logs_center_cropping/logs_128_pretrained",
+    "224_pretrained_center_decay": "./logs_best_models_weight_decay_center/logs_224_pretrained",
+    "224_pretrained_random_decay": "./logs_best_models_weight_decay_random/logs_224_pretrained",
 }
 
 classes = ['Badminton', 'Cricket', 'Tennis', 'Swimming', 'Soccer', 'Wrestling', 'Karate']
@@ -20,6 +22,7 @@ def get_model_paths_by_input_size(selected_size):
     base = MODEL_ROOTS[selected_size]
     ckpt_dir = os.path.join(base, "checkpoints")
     model_paths = []
+    print(f"Searching for models in {ckpt_dir}")
     for d in os.listdir(ckpt_dir):
         if os.path.isdir(os.path.join(ckpt_dir, d)):
             model_path = os.path.join(ckpt_dir, d)
